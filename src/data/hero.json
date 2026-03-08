@@ -1,0 +1,16 @@
+{
+  "greeting": "Hi, I'm",
+  "name": "Teja Porumamilla",
+  "roles": [
+    "Quality Engineer",
+    "Automation Engineer",
+    "Freelancer",
+    "Software Developer",
+    "Full Stack Developer"
+  ],
+  "introduction": "Passionate about building robust software solutions and ensuring quality through modern testing frameworks. I craft clean, efficient code and automated testing pipelines.",
+  "ctaButtons": [
+    { "label": "View Projects", "href": "#projects", "primary": true },
+    { "label": "Hire Me", "href": "#contact", "primary": true }
+  ]
+}

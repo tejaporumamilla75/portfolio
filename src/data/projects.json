@@ -1,0 +1,30 @@
+{
+  "projects": [
+    {
+      "title": "Ecommerce Website",
+      "description": "A full-featured ecommerce platform with product listings, cart management, user authentication, and payment integration.",
+      "technologies": [
+        "React",
+        "Spring Boot",
+        "MySQL",
+        "Bootstrap"
+      ],
+      "githubLink": "https://github.com/tejaporumamilla75/portfolio",
+      "demoLink": "#",
+      "status": "Coming Soon"
+    },
+    {
+      "title": "Playwright E2E Automation Framework",
+      "description": "End-to-end automation testing framework built using Playwright for reliable and fast browser testing across multiple platforms.",
+      "technologies": [
+        "JavaScript",
+        "Playwright",
+        "GitHub Actions",
+        "HTML"
+      ],
+      "githubLink": "https://github.com/tejaporumamilla75/PlaywrightAutomation",
+      "demoLink": "#",
+      "status": "Live"
+    }
+  ]
+}

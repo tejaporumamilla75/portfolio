@@ -1,0 +1,33 @@
+{
+  "colors": {
+    "accentPrimary": "#667eea",
+    "accentSecondary": "#764ba2",
+    "gradientAngle": "135deg"
+  },
+  "themeSets": [
+    { "name": "Sunset Orange", "accentPrimary": "#f12711", "accentSecondary": "#f5af19" },
+    { "name": "Purple Violet", "accentPrimary": "#667eea", "accentSecondary": "#764ba2" },
+    { "name": "Ocean Blue", "accentPrimary": "#2193b0", "accentSecondary": "#6dd5ed" },
+    { "name": "Emerald Green", "accentPrimary": "#11998e", "accentSecondary": "#38ef7d" },
+    { "name": "Rose Pink", "accentPrimary": "#ee5a6f", "accentSecondary": "#f09819" },
+    { "name": "Deep Indigo", "accentPrimary": "#4568dc", "accentSecondary": "#b06ab3" },
+    { "name": "Teal Mint", "accentPrimary": "#0cebeb", "accentSecondary": "#20e3b2" },
+    { "name": "Cherry Red", "accentPrimary": "#eb3349", "accentSecondary": "#f45c43" },
+    { "name": "Electric Cyan", "accentPrimary": "#00c6ff", "accentSecondary": "#0072ff" },
+    { "name": "Royal Gold", "accentPrimary": "#f7971e", "accentSecondary": "#ffd200" }
+  ],
+  "themeRotateSeconds": 5,
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Have a project in mind or want to connect? Feel free to reach out!",
+    "description": "I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Let's build something great together!",
+    "formAction": "",
+    "formFields": [
+      { "name": "name", "label": "Your Name", "type": "text", "required": true },
+      { "name": "email", "label": "Your Email", "type": "email", "required": true },
+      { "name": "subject", "label": "Subject", "type": "text", "required": true },
+      { "name": "message", "label": "Your Message", "type": "textarea", "required": true }
+    ],
+    "submitLabel": "Send Message"
+  }
+}

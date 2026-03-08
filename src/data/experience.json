@@ -1,0 +1,71 @@
+{
+  "experience": [
+    {
+      "id": 1,
+      "title": "QA Engineer",
+      "company": "LTM",
+      "location": "Bangalore, India",
+      "startDate": "2024-08",
+      "endDate": "present",
+      "description": "Leading QA strategy and automation testing for critical enterprise applications. Mentoring junior QA engineers and implementing test frameworks.",
+      "highlights": [
+        "Implemented Playwright-based test automation reducing manual testing by 70%",
+        "Designed and maintained CI/CD pipeline with GitHub Actions",
+        "Reduced production bugs by 45% through comprehensive test coverage"
+      ],
+      "skills": ["Playwright", "Selenium", "Java", "GitHub Actions", "Agile"],
+      "company_url": "https://www.ltm.com"
+    },
+    {
+      "title": "Java Developer Intern",
+      "company": "LTM",
+      "location": "Remote",
+      "startDate": "2024-05",
+      "endDate": "2024-07",
+      "description": "Worked as a Java Developer Intern contributing to backend development and web application features. Assisted in building and improving application modules using Java and web technologies while collaborating with the development team in a remote environment.",
+      "highlights": [
+        "Developed and maintained backend components using Java and JDBC.",
+        "Worked with Angular, HTML, CSS, and JavaScript to build responsive UI features.",
+        "Integrated MySQL database operations for storing and retrieving application data.",
+        "Used Git for version control and collaborated with team members through remote workflows."
+      ],
+      "skills": [
+        "Java",
+        "JDBC",
+        "JavaScript",
+        "Git",
+        "Angular",
+        "MySQL",
+        "HTML",
+        "CSS"
+      ],
+      "company_url": "https://www.ltm.com"
+    },
+    {
+  "title": "Professional Java Full Stack Training",
+  "company": "Naresh IT",
+  "location": "Hyderabad",
+  "startDate": "2023-08",
+  "endDate": "2024-03",
+  "description": "Completed intensive training in Java Full Stack Development covering backend and frontend technologies used to build modern web applications.",
+  "highlights": [
+    "Learned core Java concepts including OOP, collections, exception handling, and multithreading.",
+    "Developed backend applications using JDBC and MySQL for database integration.",
+    "Built responsive frontend interfaces using HTML, CSS, JavaScript, and React.",
+    "Used Git for version control and practiced collaborative development workflows."
+  ],
+  "skills": [
+    "Java",
+    "JDBC",
+    "JavaScript",
+    "Git",
+    "React",
+    "MySQL",
+    "HTML",
+    "CSS",
+    "SpringBoot"
+  ],
+  "company_url": "https://www.nareshit.com"
+}
+  ]
+}

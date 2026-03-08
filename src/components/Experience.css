@@ -1,0 +1,407 @@
+/* ========================================
+   EXPERIENCE TIMELINE — LinkedIn Style
+   ======================================== */
+
+.experience-timeline {
+  position: relative;
+  padding: 20px 0;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-left: 60px;
+}
+
+/* Vertical line connecting timeline dots */
+.experience-timeline::before {
+  content: '';
+  position: absolute;
+  left: 24px;
+  top: 0;
+  bottom: 0;
+  width: 6px;
+  margin-left: -3px;
+  background: linear-gradient(
+    to bottom,
+    var(--accent-primary),
+    var(--accent-secondary),
+    var(--accent-primary)
+  );
+  opacity: 0.3;
+  border-radius: 3px;
+}
+
+/* Experience item container */
+.experience-item {
+  display: block;
+  margin-bottom: 48px;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 80px;
+}
+
+/* Timeline dot */
+.timeline-dot {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--card-bg);
+  border: 3px solid var(--accent-primary);
+  position: absolute;
+  left: 0px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px var(--accent-glow);
+  transition: all 0.3s ease;
+  z-index: 10;
+  margin-left: -24px;
+  transform: translateX(-50%);
+}
+
+.experience-item:hover .timeline-dot {
+  background: var(--accent-gradient);
+  transform: scale(1.15);
+  box-shadow: 0 0 30px var(--accent-glow);
+}
+
+/* Experience card */
+.experience-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--border-radius-lg);
+  padding: 28px;
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  box-shadow: var(--card-shadow);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Gradient accent border on hover */
+.experience-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--accent-gradient);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.experience-item:hover .experience-card {
+  background: var(--card-hover-bg);
+  box-shadow: 0 12px 40px var(--accent-glow);
+  transform: translateY(-4px);
+}
+
+.experience-item:hover .experience-card::before {
+  opacity: 1;
+}
+
+/* Header section */
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.experience-title-group {
+  flex: 1;
+  min-width: 200px;
+}
+
+.experience-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.experience-company {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  transition: color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.experience-company:hover {
+  color: var(--accent-primary);
+}
+
+/* Date range */
+.experience-date {
+  background: var(--badge-bg);
+  color: var(--badge-text);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+/* Location */
+.experience-location {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Description */
+.experience-description {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+/* Highlights list */
+.experience-highlights {
+  list-style: none;
+  margin: 16px 0;
+  padding: 0;
+}
+
+.experience-highlights li {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+  padding-left: 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.experience-highlights li::before {
+  content: '✓';
+  color: var(--accent-primary);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* Skills tags */
+.experience-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--card-border);
+}
+
+.skill-tag {
+  display: inline-flex;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: var(--badge-bg);
+  color: var(--badge-text);
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.skill-tag:hover {
+  background: transparent;
+  border-color: var(--badge-text);
+  transform: translateY(-2px);
+}
+
+/* ========================================
+   RESPONSIVE — Tablet (768px and below)
+   ======================================== */
+@media (max-width: 768px) {
+  .experience-timeline {
+    padding-left: 50px;
+  }
+
+  .experience-timeline::before {
+    left: 18px;
+    width: 6px;
+    margin-left: -3px;
+  }
+
+  .experience-item {
+    padding-left: 60px;
+    margin-bottom: 40px;
+  }
+
+  .timeline-dot {
+    width: 40px;
+    height: 40px;
+    border-width: 2px;
+    left: 0px;
+    margin-left: -18px;
+    transform: translateX(-50%);
+  }
+
+  .experience-card {
+    padding: 20px;
+  }
+
+  .experience-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .experience-date {
+    width: 100%;
+    text-align: left;
+  }
+
+  .experience-title {
+    font-size: 1.1rem;
+  }
+
+  .experience-company {
+    font-size: 0.95rem;
+  }
+}
+
+/* ========================================
+   RESPONSIVE — Mobile (480px and below)
+   ======================================== */
+@media (max-width: 480px) {
+  .experience-timeline {
+    padding: 15px 0 15px 45px;
+  }
+
+  .experience-timeline::before {
+    left: 14px;
+    width: 6px;
+    margin-left: -3px;
+  }
+
+  .experience-item {
+    padding-left: 50px;
+    margin-bottom: 32px;
+    width: 100%;
+  }
+
+  .timeline-dot {
+    width: 32px;
+    height: 32px;
+    border-width: 2px;
+    left: 0px;
+    margin-left: -14px;
+    transform: translateX(-50%);
+    min-width: 32px;
+  }
+
+  .experience-card {
+    padding: 16px;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .experience-title {
+    font-size: 1rem;
+  }
+
+  .experience-company {
+    font-size: 0.9rem;
+    display: block;
+  }
+
+  .experience-date {
+    font-size: 0.75rem;
+    padding: 4px 12px;
+    margin-top: 6px;
+    display: inline-block;
+  }
+
+  .experience-location {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+
+  .experience-description {
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+  }
+
+  .experience-highlights li {
+    font-size: 0.85rem;
+    margin-bottom: 6px;
+  }
+
+  .skill-tag {
+    padding: 4px 10px;
+    font-size: 0.7rem;
+  }
+
+  .experience-skills {
+    gap: 6px;
+    margin-top: 12px;
+    padding-top: 12px;
+  }
+
+  /* Stack header items vertically on very small screens */
+  .experience-header {
+    gap: 6px;
+  }
+}
+
+/* ========================================
+   RESPONSIVE — Extra Small (320px and below)
+   ======================================== */
+@media (max-width: 320px) {
+  .experience-timeline {
+    padding: 15px 0 15px 40px;
+  }
+
+  .experience-timeline::before {
+    left: 12px;
+    width: 6px;
+    margin-left: -3px;
+  }
+
+  .experience-item {
+    padding-left: 45px;
+  }
+
+  .timeline-dot {
+    width: 28px;
+    height: 28px;
+    left: 0px;
+    margin-left: -12px;
+    transform: translateX(-50%);
+  }
+
+  .experience-card {
+    padding: 12px;
+  }
+
+  .experience-title {
+    font-size: 0.95rem;
+  }
+
+  .experience-company {
+    font-size: 0.85rem;
+  }
+
+  .skill-tag {
+    padding: 3px 8px;
+    font-size: 0.65rem;
+  }
+}

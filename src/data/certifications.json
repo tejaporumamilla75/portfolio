@@ -1,0 +1,25 @@
+{
+  "certifications": [
+    {
+      "title": "Crash Course on Python",
+      "provider": "Coursera",
+      "image": "/assets/certifications/python-cert.png",
+      "url": "https://coursera.org/verify/732WJKS5H9YR",
+      "year": "2023"
+    },
+    {
+      "title": "Introduction to Git and GitHub",
+      "provider": "Coursera",
+      "image": "/assets/certifications/gitandgithub-cert.png",
+      "url": "https://coursera.org/verify/9C2JUWYJ69SZ",
+      "year": "2023"
+    },
+    {
+      "title": "AWS Educate Getting Started with Compute",
+      "provider": "AWS",
+      "image": "/assets/certifications/awscompute-cert.png",
+      "url": "https://www.credly.com/earner/earned/badge/9946be3f-ce1f-43d8-954f-555118d8a261",
+      "year": "2023"
+    }
+  ]
+}

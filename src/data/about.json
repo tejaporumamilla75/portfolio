@@ -1,0 +1,21 @@
+{
+  "title": "About Me",
+  "bio": "I am a Quality Engineer and Software Developer specializing in automation testing and modern web technologies. With a strong foundation in both development and testing, I build reliable, scalable applications and ensure they meet the highest quality standards.",
+  "experienceSummary": "Experienced in developing full-stack web applications and creating end-to-end test automation frameworks using modern tools and technologies.",
+  "highlights": [
+    { "label": "Experience", "value": "1.5+ Years" },
+    { "label": "Projects", "value": "2+" },
+    { "label": "Technologies", "value": "10+" },
+    { "label": "Certifications", "value": "5+" }
+  ],
+  "technologies": [
+    "Java",
+    "JavaScript",
+    "React",
+    "Spring Boot",
+    "Playwright",
+    "Selenium",
+    "MySQL",
+    "Git"
+  ]
+}
