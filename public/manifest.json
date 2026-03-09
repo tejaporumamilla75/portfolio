@@ -1,0 +1,58 @@
+{
+  "name": "Teja Porumamilla - Full-Stack Developer & QA Engineer Portfolio",
+  "short_name": "Teja Portfolio",
+  "description": "Full-Stack Developer and QA Automation Engineer specializing in Java, React, Spring Boot, Playwright, and Selenium. Explore projects, skills, and professional experience.",
+  "start_url": "https://portfolio.tejaporumailla.worker.pages.dev/",
+  "scope": "https://portfolio.tejaporumailla.worker.pages.dev/",
+  "display": "standalone",
+  "theme_color": "#667eea",
+  "background_color": "#ffffff",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/public/T.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/public/T.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/public/T.png",
+      "sizes": "540x720",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "/public/T.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ],
+  "categories": ["productivity", "business"],
+  "keywords": ["developer", "portfolio", "react", "java", "automation", "qa"],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "View Projects",
+      "short_name": "Projects",
+      "description": "View my latest projects and work",
+      "url": "/?section=projects",
+      "icons": []
+    },
+    {
+      "name": "Get in Touch",
+      "short_name": "Contact",
+      "description": "Contact me for collaboration",
+      "url": "/?section=contact",
+      "icons": []
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-# SEO Robots Configuration for Teja's Portfolio
+# SEO Robots Configuration for Teja Porumamilla's Portfolio
 # Allows search engines to crawl and index the website
 
 User-agent: *
@@ -7,8 +7,11 @@ Disallow: /node_modules/
 Disallow: /.git/
 Disallow: /.vscode/
 Disallow: /dist-ssr/
+Disallow: /dist/
 Disallow: /.env
 Disallow: /.env.local
+Disallow: /package.json
+Disallow: /vite.config.js
 
 # Specific rules for Google Bot
 User-agent: Googlebot
@@ -20,8 +23,12 @@ User-agent: Bingbot
 Allow: /
 Crawl-delay: 1
 
+# Specific rules for Other Bots
+User-agent: *
+Crawl-delay: 2
+
 # Sitemap location
-Sitemap: https://teja-portfolio.com/sitemap.xml
+Sitemap: https://portfolio.tejaporumailla.worker.pages.dev/sitemap.xml
 
 # Request rate (requests per second for crawlers)
 Request-rate: 1/10s

@@ -16,7 +16,7 @@
     { "name": "Electric Cyan", "accentPrimary": "#00c6ff", "accentSecondary": "#0072ff" },
     { "name": "Royal Gold", "accentPrimary": "#f7971e", "accentSecondary": "#ffd200" }
   ],
-  "themeRotateSeconds": 5,
+  "themeRotateSeconds": 7,
   "contact": {
     "title": "Get In Touch",
     "subtitle": "Have a project in mind or want to connect? Feel free to reach out!",

@@ -167,6 +167,18 @@ img { max-width: 100%; display: block; }
   margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 40px 16px;
+  }
+}
+
 .section-title {
   font-size: clamp(1.8rem, 4vw, 2.5rem);
   font-weight: 800;
@@ -302,6 +314,7 @@ img { max-width: 100%; display: block; }
   align-items: center;
   justify-content: center;
   gap: 36px;
+  padding: 80px 24px 24px 24px;
 }
 .mobile-nav.open {
   display: flex;
@@ -315,11 +328,16 @@ img { max-width: 100%; display: block; }
 .mobile-nav a:hover {
   color: var(--accent-primary);
 }
+.mobile-nav .theme-toggle {
+  position: absolute;
+  top: 16px;
+  left: 20px;
+}
 
 .mobile-nav-close {
   position: absolute;
-  top: 24px;
-  right: 24px;
+  top: 16px;
+  right: 16px;
   background: none;
   border: none;
   color: var(--text-primary);
@@ -332,6 +350,7 @@ img { max-width: 100%; display: block; }
   justify-content: center;
   border-radius: 50%;
   transition: var(--transition);
+  z-index: 1001;
 }
 .mobile-nav-close:hover {
   background: var(--glass-bg);
@@ -360,10 +379,19 @@ img { max-width: 100%; display: block; }
   transition: var(--transition);
   backdrop-filter: var(--glass-blur);
   -webkit-backdrop-filter: var(--glass-blur);
+  color: var(--text-primary);
+  padding: 0;
 }
 .theme-toggle:hover {
   transform: rotate(30deg) scale(1.1);
   box-shadow: 0 0 20px var(--accent-glow);
+}
+.theme-icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 /* ========================================
@@ -688,9 +716,9 @@ img { max-width: 100%; display: block; }
    ======================================== */
 .certifications-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 28px;
-  place-items: start;
+  place-items: stretch;
 }
 
 .cert-card {
@@ -707,6 +735,8 @@ img { max-width: 100%; display: block; }
   text-decoration: none;
   color: inherit;
   position: relative;
+  height: 100%;
+  width: 100%;
 }
 .cert-card:hover {
   transform: translateY(-8px);
@@ -716,9 +746,11 @@ img { max-width: 100%; display: block; }
 
 .cert-image-wrapper {
   overflow: hidden;
-  height: 200px;
+  flex: 1;
+  min-height: 220px;
   background: var(--bg-secondary);
   position: relative;
+  aspect-ratio: 16 / 9;
 }
 
 /* Loading skeleton animation */
@@ -762,6 +794,7 @@ img { max-width: 100%; display: block; }
   display: flex;
   flex-direction: column;
   gap: 6px;
+  flex: 0 1 auto;
 }
 
 .cert-title {
@@ -816,7 +849,7 @@ img { max-width: 100%; display: block; }
 
 @media (max-width: 768px) {
   .certifications-grid {
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     gap: 20px;
   }
 }
@@ -825,7 +858,11 @@ img { max-width: 100%; display: block; }
     grid-template-columns: 1fr;
     gap: 16px;
   }
-  .cert-image-wrapper { height: 180px; }
+  .cert-image-wrapper { 
+    aspect-ratio: auto;
+    min-height: auto;
+    height: 200px;
+  }
 }
 
 /* ========================================

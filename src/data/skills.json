@@ -11,6 +11,7 @@
     { "name": "Bootstrap", "category": "Frontend", "icon": "bootstrap" },
     { "name": "HTML", "category": "Frontend", "icon": "html" },
     { "name": "CSS", "category": "Frontend", "icon": "css" },
+    { "name": "React", "category": "Frontend", "icon": "react" },
     { "name": "Spring Boot", "category": "Backend", "icon": "springboot" }
   ]
 }

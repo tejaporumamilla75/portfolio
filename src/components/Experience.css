@@ -8,14 +8,14 @@
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
-  padding-left: 60px;
+  padding-left: 40px;
 }
 
 /* Vertical line connecting timeline dots */
 .experience-timeline::before {
   content: '';
   position: absolute;
-  left: 24px;
+  left: 1px;
   top: 0;
   bottom: 0;
   width: 6px;
@@ -37,7 +37,7 @@
   position: relative;
   width: 100%;
   box-sizing: border-box;
-  padding-left: 80px;
+  padding-left: 60px;
 }
 
 /* Timeline dot */
@@ -78,6 +78,13 @@
   transition: var(--transition);
   position: relative;
   overflow: hidden;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .experience-card {
+    padding: 16px;
+  }
 }
 
 /* Gradient accent border on hover */
@@ -230,7 +237,7 @@
    ======================================== */
 @media (max-width: 768px) {
   .experience-timeline {
-    padding-left: 50px;
+    padding-left: 40px;
   }
 
   .experience-timeline::before {
@@ -240,7 +247,7 @@
   }
 
   .experience-item {
-    padding-left: 60px;
+    padding-left: 48px;
     margin-bottom: 40px;
   }
 
@@ -282,23 +289,23 @@
    ======================================== */
 @media (max-width: 480px) {
   .experience-timeline {
-    padding: 15px 0 15px 45px;
+    padding: 15px 0 15px 35px;
   }
 
   .experience-timeline::before {
-    left: 14px;
+    left: 12px;
     width: 6px;
     margin-left: -3px;
   }
 
   .experience-item {
-    padding-left: 50px;
-    margin-bottom: 32px;
+    padding-left: 15px;
+    margin-bottom: 20px;
     width: 100%;
   }
 
   .timeline-dot {
-    width: 32px;
+    width: 30px;
     height: 32px;
     border-width: 2px;
     left: 0px;
@@ -308,7 +315,7 @@
   }
 
   .experience-card {
-    padding: 16px;
+    padding: 10px;
     margin: 0;
     width: 100%;
     box-sizing: border-box;
